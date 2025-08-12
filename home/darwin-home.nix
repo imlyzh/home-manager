@@ -1,4 +1,4 @@
-{ config, pkgs, dotfiles, ... }:
+{ config, lib, pkgs, dotfiles, ... }:
 {
   home = {
     username = "lyzh";
@@ -7,7 +7,7 @@
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  nix.package = pkgs.nix;
+  nix.package = lib.mkDefault pkgs.nix;
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
