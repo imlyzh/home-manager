@@ -9,12 +9,16 @@
 
     openjdk
 
-    rustup
+    # rustup
 
     qemu
 
     lunarvim
     neovim
+
+    (rust-bin.stable.latest.default.override {
+      extensions = [ "rust-src" "rust-analyzer" "format" "clippy" "pest-language-server" ];
+    })
   ];
 
   programs.git = {

@@ -16,7 +16,12 @@
   outputs = { nixpkgs, home-manager, rust-overlay, ... } @ inputs: {
     homeConfigurations = {
       "linux" = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages."x86_64-linux";
+        pkgs = import nixpkgs {
+          system = "x86_64-linux";
+          overlays = [
+            rust-overlay.overlays.default
+          ];
+          };
         extraSpecialArgs = { inherit inputs; };
         modules = [
           ./home/home.nix
@@ -29,7 +34,12 @@
         ];
       };
       "linux-desktop" = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages."x86_64-linux";
+        pkgs = import nixpkgs {
+          system = "x86_64-linux";
+          overlays = [
+            rust-overlay.overlays.default
+          ];
+          };
         extraSpecialArgs = { inherit inputs; };
         modules = [
           ./home/home.nix
