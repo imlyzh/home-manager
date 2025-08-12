@@ -13,7 +13,7 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, rust-overlay, ... } @ inputs: {
+  outputs = { nixpkgs, home-manager, rust-overlay, ... } @ inputs: rec {
     homeConfigurations = {
       "linux" = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
@@ -72,8 +72,8 @@
         ];
       };
     };
-    linuxConfig = self.homeConfigurations."linux";
-    linuxDesktopConfig = self.homeConfigurations."linux-desktop";
-    darwinConfig = self.homeConfigurations."darwin";
+    linuxConfig = homeConfigurations."linux";
+    linuxDesktopConfig = homeConfigurations."linux-desktop";
+    darwinConfig = homeConfigurations."darwin";
   };
 }
