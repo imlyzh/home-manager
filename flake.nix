@@ -20,9 +20,9 @@
           ./home/shell.nix
           ./home/dev.nix
           ./home/docker.nix
-          # ({ pkgs, ... }: {
-          #   nixpkgs.overlays = [ rust-overlay.overlays.default ];
-          # })
+          ({ pkgs, ... }: {
+            nixpkgs.overlays = [ rust-overlay.overlays.default ];
+          })
         ];
     linux-desktop-modules = [
           ./home/home.nix
@@ -30,17 +30,17 @@
           ./home/dev.nix
           ./home/docker.nix
           ./home/desktop-apps.nix
-          # ({ pkgs, ... }: {
-          #   nixpkgs.overlays = [ rust-overlay.overlays.default ];
-          # })
+          ({ pkgs, ... }: {
+            nixpkgs.overlays = [ rust-overlay.overlays.default ];
+          })
         ];
     darwin-modules = [
           ./home/darwin-home.nix
           ./home/shell.nix
           ./home/dev.nix
-          # ({ pkgs, ... }: {
-          #   nixpkgs.overlays = [ rust-overlay.overlays.default ];
-          # })
+          ({ pkgs, ... }: {
+            nixpkgs.overlays = [ rust-overlay.overlays.default ];
+          })
         ];
 
     homeConfigurations = {
@@ -87,8 +87,5 @@
         modules = darwin-modules;
       };
     };
-    linuxConfig = homeConfigurations."linux";
-    linuxDesktopConfig = homeConfigurations."linux-desktop";
-    darwinConfig = homeConfigurations."darwin";
   };
 }

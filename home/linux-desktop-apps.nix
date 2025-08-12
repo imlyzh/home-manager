@@ -59,9 +59,9 @@
 
   programs.firefox.enable = true;
 
-  xdg.configFile = {
-    "./.config/assets".source = "${dotfiles}/.config/assets";
-    "./.config/waybar".source = "${dotfiles}/.config/waybar";
-    "./.config/niri/config.kdl".source = "${dotfiles}/.config/niri/config.kdl";
-  };
+  # xdg.configFile = {
+  #   "./.config/assets".text = import ../dotfiles/.config/assets;
+  #   "./.config/waybar".text = import ../dotfiles/.config/waybar;
+  #   "./.config/niri/config.kdl".text = import .../dotfiles/.config/niri/config.kdl;
+  # };
 }

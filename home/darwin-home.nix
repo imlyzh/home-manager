@@ -46,6 +46,6 @@
   programs.home-manager.enable = true;
 
   home.file = {
-    ".config/ghostty/config.toml".source = "${dotfiles}/.config/ghostty/config.toml";
+    ".config/ghostty/config.toml".text = builtins.readFile ../dotfiles/.config/ghostty/config.toml;
   };
 }
