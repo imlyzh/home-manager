@@ -14,6 +14,35 @@
   };
 
   outputs = { nixpkgs, home-manager, rust-overlay, ... } @ inputs: rec {
+    dotfiles = ./dotfiles;
+    linux-modules = [
+          ./home/home.nix
+          ./home/shell.nix
+          ./home/dev.nix
+          ./home/docker.nix
+          ({ pkgs, ... }: {
+            nixpkgs.overlays = [ rust-overlay.overlays.default ];
+          })
+        ];
+    linux-desktop-modules = [
+          ./home/home.nix
+          ./home/shell.nix
+          ./home/dev.nix
+          ./home/docker.nix
+          ./home/desktop-apps.nix
+          ({ pkgs, ... }: {
+            nixpkgs.overlays = [ rust-overlay.overlays.default ];
+          })
+        ];
+    darwin-modules = [
+          ./home/darwin-home.nix
+          ./home/shell.nix
+          ./home/dev.nix
+          ({ pkgs, ... }: {
+            nixpkgs.overlays = [ rust-overlay.overlays.default ];
+          })
+        ];
+
     homeConfigurations = {
       "linux" = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
@@ -27,15 +56,7 @@
           inherit inputs;
           dotfiles = ./dotfiles;
           };
-        modules = [
-          ./home/home.nix
-          ./home/shell.nix
-          ./home/dev.nix
-          ./home/docker.nix
-          ({ pkgs, ... }: {
-            nixpkgs.overlays = [ rust-overlay.overlays.default ];
-          })
-        ];
+        modules = linux-modules;
       };
       "linux-desktop" = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
@@ -47,17 +68,9 @@
           };
         extraSpecialArgs = {
           inherit inputs;
-          dotfiles = ./dotfiles;
+          inherit dotfiles;
           };
-        modules = [
-          ./home/home.nix
-          ./home/shell.nix
-          ./home/dev.nix
-          ./home/docker.nix
-          ({ pkgs, ... }: {
-            nixpkgs.overlays = [ rust-overlay.overlays.default ];
-          })
-        ];
+        modules = linux-desktop-modules;
       };
       "darwin" = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
@@ -69,16 +82,9 @@
           };
         extraSpecialArgs = {
           inherit inputs;
-          dotfiles = ./dotfiles;
+          inherit dotfiles;
           };
-        modules = [
-          ./home/darwin-home.nix
-          ./home/shell.nix
-          ./home/dev.nix
-          ({ pkgs, ... }: {
-            nixpkgs.overlays = [ rust-overlay.overlays.default ];
-          })
-        ];
+        modules = darwin-modules;
       };
     };
     linuxConfig = homeConfigurations."linux";
