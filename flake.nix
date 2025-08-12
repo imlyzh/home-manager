@@ -11,10 +11,14 @@
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    dotfiles = {
+      url = "github:imlyzh/dotfiles";
+      flake = false;
+    };
   };
 
-  outputs = { nixpkgs, home-manager, rust-overlay, ... } @ inputs: rec {
-    dotfiles = ./dotfiles;
+  outputs = { nixpkgs, home-manager, rust-overlay, dotfiles, ... } @ inputs: rec {
     linux-modules = [
           ./home/home.nix
           ./home/shell.nix
@@ -54,7 +58,7 @@
           };
         extraSpecialArgs = {
           inherit inputs;
-          dotfiles = ./dotfiles;
+          inherit dotfiles;
           };
         modules = linux-modules;
       };

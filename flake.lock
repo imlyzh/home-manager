@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "dotfiles": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1755036499,
+        "narHash": "sha256-lL3IcqUODnqdHAXoBWMIwLtQ4mHtY+bZzirYqUeZMj0=",
+        "owner": "imlyzh",
+        "repo": "dotfiles",
+        "rev": "25c73e42b27dbefd18cd2f0a7a1d109f1228f186",
+        "type": "github"
+      },
+      "original": {
+        "owner": "imlyzh",
+        "repo": "dotfiles",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -38,6 +54,7 @@
     },
     "root": {
       "inputs": {
+        "dotfiles": "dotfiles",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "rust-overlay": "rust-overlay"
