@@ -17,7 +17,7 @@
     neovim
 
     (rust-bin.stable.latest.default.override {
-      extensions = [ "rust-src" "rust-analyzer" "format" "clippy" "pest-language-server" ];
+      extensions = [ "cargo" "clippy" "rust" "rust-src" "rust-std" "rustc" "rustfmt" "rust-docs" "rust-analyzer" ];
     })
   ];
 
