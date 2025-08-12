@@ -51,6 +51,23 @@
           })
         ];
       };
+      "mac" = home-manager.lib.homeManagerConfiguration {
+        pkgs = import nixpkgs {
+          system = "aarch64-darwin";
+          overlays = [
+            rust-overlay.overlays.default
+          ];
+          };
+        extraSpecialArgs = { inherit inputs; };
+        modules = [
+          ./home/darwin-home.nix
+          ./home/shell.nix
+          ./home/dev.nix
+          ({ pkgs, ... }: {
+            nixpkgs.overlays = [ rust-overlay.overlays.default ];
+          })
+        ];
+      };
     };
   };
 }
