@@ -22,6 +22,7 @@
     iina
     qbittorrent-enhanced
     localsend
+    disk-inventory-x
     appcleaner
     keycastr
     ollama
@@ -42,6 +43,9 @@
     mumble
 
     whisky
+    protonplus
+
+    v2raya
   ];
   programs.home-manager.enable = true;
 
