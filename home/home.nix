@@ -32,7 +32,6 @@
     # backupFileExtension = "backup";
 
   home.file = {
-    # ".config/niri/config.kdl".source = ../dotfiles/.config/niri/config.kdl;
     ".config/Code/argv.json".source = ../dotfiles/.config/Code/argv.json;
     ".config/ghostty/config.toml".source = ../dotfiles/.config/ghostty/config.toml;
   };

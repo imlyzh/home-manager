@@ -1,12 +1,4 @@
 { pkgs,... }:
-# let
-#   rosettaPkgs = import pkgs.path {
-#     system = "x86_64-darwin";
-#     config.allowUnsupportedSystem = true;
-#     config.allowUnfree = true;
-#     # config.allowBroken = true;
-#   };
-# in
 {
   home = {
     username = "lyzh";
