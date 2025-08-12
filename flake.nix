@@ -18,7 +18,7 @@
       "linux" = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
           system = "x86_64-linux";
-          config.allowUnfree = true;
+          # config.allowUnfree = true;
           overlays = [
             rust-overlay.overlays.default
           ];
@@ -37,7 +37,7 @@
       "linux-desktop" = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
           system = "x86_64-linux";
-          config.allowUnfree = true;
+          # config.allowUnfree = true;
           overlays = [
             rust-overlay.overlays.default
           ];
@@ -56,7 +56,7 @@
       "darwin" = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
           system = "aarch64-darwin";
-          config.allowUnfree = true;
+          # config.allowUnfree = true;
           overlays = [
             rust-overlay.overlays.default
           ];
