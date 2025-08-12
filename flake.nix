@@ -63,12 +63,12 @@
           };
         extraSpecialArgs = { inherit inputs; };
         modules = [
-          # ./home/darwin-home.nix
-          # ./home/shell.nix
-          # ./home/dev.nix
-          # ({ pkgs, ... }: {
-          #   nixpkgs.overlays = [ rust-overlay.overlays.default ];
-          # })
+          ./home/darwin-home.nix
+          ./home/shell.nix
+          ./home/dev.nix
+          ({
+            nixpkgs.overlays = [ rust-overlay.overlays.default ];
+          })
         ];
       };
     };

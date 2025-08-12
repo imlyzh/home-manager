@@ -3,11 +3,11 @@
   home = {
     username = "lyzh";
     homeDirectory = "/home/lyzh";
-    # stateVersion = "25.05";
+    stateVersion = "25.05";
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  nix.package = pkgs.nix;
+  # nix.package = pkgs.nix;
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
