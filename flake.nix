@@ -66,7 +66,7 @@
           ./home/darwin-home.nix
           ./home/shell.nix
           ./home/dev.nix
-          ({
+          ({ pkgs, ... }: {
             nixpkgs.overlays = [ rust-overlay.overlays.default ];
           })
         ];
