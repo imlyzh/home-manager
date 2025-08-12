@@ -32,6 +32,6 @@
     # backupFileExtension = "backup";
 
   home.file = {
-    ".config/ghostty/config.toml".text = builtins.readFile ../dotfiles/.config/ghostty/config.toml;
+    ".config/ghostty/config.toml".text = "${dotfiles}/.config/ghostty/config.toml";
   };
 }
