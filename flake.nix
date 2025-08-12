@@ -18,6 +18,7 @@
       "linux" = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
           system = "x86_64-linux";
+          config.allowUnfree = true;
           overlays = [
             rust-overlay.overlays.default
           ];
@@ -36,6 +37,7 @@
       "linux-desktop" = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
           system = "x86_64-linux";
+          config.allowUnfree = true;
           overlays = [
             rust-overlay.overlays.default
           ];
@@ -51,9 +53,10 @@
           })
         ];
       };
-      "mac" = home-manager.lib.homeManagerConfiguration {
+      "darwin" = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
           system = "aarch64-darwin";
+          config.allowUnfree = true;
           overlays = [
             rust-overlay.overlays.default
           ];
@@ -69,5 +72,8 @@
         ];
       };
     };
+    linuxConfig = self.homeConfigurations."linux";
+    linuxDesktopConfig = self.homeConfigurations."linux-desktop";
+    darwinConfig = self.homeConfigurations."darwin";
   };
 }
