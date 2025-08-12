@@ -53,19 +53,18 @@
       size = 14;
     };
   };
+  programs.ghostty = {
+    enable = true;
+  };
 
   programs.firefox.enable = true;
 
-    home.file = {
-      "./.config/waybar".source = ../dotfiles/.config/waybar;
-      "./.config/assets".source = ../dotfiles/.config/assets;
-      "./.config/niri/config.kdl".source = ../dotfiles/.config/niri/config.kdl;
-    };
-    programs.ghostty = {
-      enable = true;
-      settings = {
-      };
-    };
+  xdg.configFile = {
+    "./.config/waybar".source = ../dotfiles/.config/waybar;
+    "./.config/assets".source = ../dotfiles/.config/assets;
+    "./.config/niri/config.kdl".source = ../dotfiles/.config/niri/config.kdl;
+  };
+
   home.sessionVariables = {
     GTK_IM_MODULE = "ibus";
     QT_IM_MODULE = "ibus";
