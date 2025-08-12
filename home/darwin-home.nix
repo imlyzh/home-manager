@@ -1,4 +1,4 @@
-{ config, pkgs,... }:
+{ config, pkgs, dotfiles, ... }:
 {
   home = {
     username = "lyzh";
@@ -46,6 +46,6 @@
   programs.home-manager.enable = true;
 
   home.file = {
-    ".config/ghostty/config.toml".source = ../dotfiles/.config/ghostty/config.toml;
+    ".config/ghostty/config.toml".source = "${dotfiles}/.config/ghostty/config.toml";
   };
 }

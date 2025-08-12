@@ -60,14 +60,8 @@
   programs.firefox.enable = true;
 
   xdg.configFile = {
-    "./.config/waybar".source = ../dotfiles/.config/waybar;
-    "./.config/assets".source = ../dotfiles/.config/assets;
-    "./.config/niri/config.kdl".source = ../dotfiles/.config/niri/config.kdl;
-  };
-
-  home.sessionVariables = {
-    GTK_IM_MODULE = "ibus";
-    QT_IM_MODULE = "ibus";
-    XMODIFIERS = "@im=ibus";
+    "./.config/assets".source = "${dotfiles}/.config/assets";
+    "./.config/waybar".source = "${dotfiles}/.config/waybar";
+    "./.config/niri/config.kdl".source = "${dotfiles}/.config/niri/config.kdl";
   };
 }

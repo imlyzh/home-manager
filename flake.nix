@@ -23,7 +23,10 @@
             rust-overlay.overlays.default
           ];
           };
-        extraSpecialArgs = { inherit inputs; };
+        extraSpecialArgs = {
+          inherit inputs;
+          dotfiles = ./dotfiles;
+          };
         modules = [
           ./home/home.nix
           ./home/shell.nix
@@ -42,7 +45,10 @@
             rust-overlay.overlays.default
           ];
           };
-        extraSpecialArgs = { inherit inputs; };
+        extraSpecialArgs = {
+          inherit inputs;
+          dotfiles = ./dotfiles;
+          };
         modules = [
           ./home/home.nix
           ./home/shell.nix
@@ -61,7 +67,10 @@
             rust-overlay.overlays.default
           ];
           };
-        extraSpecialArgs = { inherit inputs; };
+        extraSpecialArgs = {
+          inherit inputs;
+          dotfiles = ./dotfiles;
+          };
         modules = [
           ./home/darwin-home.nix
           ./home/shell.nix
