@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, dotfiles, ... }:
 {
   home = {
     username = "lyzh";
