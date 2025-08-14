@@ -9,7 +9,7 @@
 
     openjdk
 
-    # rustup
+    rustup
 
     qemu
 
