@@ -17,7 +17,7 @@
     neovim
 
     (pkgs.rust-bin.stable.latest.default.override {
-      extensions = [ "cargo" "clippy" "rust" "rust-src" "rust-std" "rustc" "rustfmt" "rust-docs" "rust-analyzer" ];
+      extensions = [ "cargo" "clippy" "rust" "rust-src" "rust-std" "rustc" "rustfmt" "rust-docs" "rust-analyzer" "miri" ];
     })
   ];
 
