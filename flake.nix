@@ -7,10 +7,10 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    rust-overlay = {
-      url = "github:oxalica/rust-overlay";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # rust-overlay = {
+      # url = "github:oxalica/rust-overlay";
+      # inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     dotfiles = {
       url = "github:imlyzh/dotfiles";
@@ -24,9 +24,9 @@
           ./home/shell.nix
           ./home/dev.nix
           ./home/docker.nix
-          ({ pkgs, ... }: {
-            nixpkgs.overlays = [ rust-overlay.overlays.default ];
-          })
+          # ({ pkgs, ... }: {
+            # nixpkgs.overlays = [ rust-overlay.overlays.default ];
+          # })
         ];
     linux-desktop-modules = [
           ./home/home.nix
@@ -34,17 +34,17 @@
           ./home/dev.nix
           ./home/docker.nix
           ./home/desktop-apps.nix
-          ({ pkgs, ... }: {
-            nixpkgs.overlays = [ rust-overlay.overlays.default ];
-          })
+          # ({ pkgs, ... }: {
+            # nixpkgs.overlays = [ rust-overlay.overlays.default ];
+          # })
         ];
     darwin-modules = [
           ./home/darwin-home.nix
           ./home/shell.nix
           ./home/dev.nix
-          ({ pkgs, ... }: {
-            nixpkgs.overlays = [ rust-overlay.overlays.default ];
-          })
+          # ({ pkgs, ... }: {
+            # nixpkgs.overlays = [ rust-overlay.overlays.default ];
+          # })
         ];
 
     homeConfigurations = {
@@ -52,9 +52,9 @@
         pkgs = import nixpkgs {
           system = "x86_64-linux";
           # config.allowUnfree = true;
-          overlays = [
-            rust-overlay.overlays.default
-          ];
+          # overlays = [
+            # rust-overlay.overlays.default
+          # ];
           };
         extraSpecialArgs = {
           inherit inputs;
@@ -66,9 +66,9 @@
         pkgs = import nixpkgs {
           system = "x86_64-linux";
           # config.allowUnfree = true;
-          overlays = [
-            rust-overlay.overlays.default
-          ];
+          # overlays = [
+            # rust-overlay.overlays.default
+          # ];
           };
         extraSpecialArgs = {
           inherit inputs;
@@ -80,9 +80,9 @@
         pkgs = import nixpkgs {
           system = "aarch64-darwin";
           # config.allowUnfree = true;
-          overlays = [
-            rust-overlay.overlays.default
-          ];
+          # overlays = [
+            # rust-overlay.overlays.default
+          # ];
           };
         extraSpecialArgs = {
           inherit inputs;
