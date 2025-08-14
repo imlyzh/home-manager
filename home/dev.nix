@@ -13,7 +13,7 @@
 
     qemu
 
-    lunarvim
+    #lunarvim
     neovim
 
     (pkgs.rust-bin.stable.latest.default.override {
