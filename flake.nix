@@ -18,7 +18,7 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, rust-overlay, dotfiles, ... } @ inputs: rec {
+  outputs = { nixpkgs, home-manager, dotfiles, ... } @ inputs: rec {
     linux-modules = [
           ./home/home.nix
           ./home/shell.nix

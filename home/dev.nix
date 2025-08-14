@@ -16,9 +16,9 @@
     #lunarvim
     neovim
 
-    (pkgs.rust-bin.stable.latest.default.override {
-      extensions = [ "cargo" "clippy" "rust" "rust-src" "rust-std" "rustc" "rustfmt" "rust-docs" "rust-analyzer" "miri" ];
-    })
+    # (pkgs.rust-bin.stable.latest.default.override {
+    #   extensions = [ "cargo" "clippy" "rust" "rust-src" "rust-std" "rustc" "rustfmt" "rust-docs" "rust-analyzer" "miri" ];
+    # })
   ];
 
   programs.git = {
