@@ -34,6 +34,7 @@
           ./home/dev.nix
           ./home/docker.nix
           ./home/desktop-apps.nix
+          ./home/battlenet-games.nix
           # ({ pkgs, ... }: {
             # nixpkgs.overlays = [ rust-overlay.overlays.default ];
           # })
