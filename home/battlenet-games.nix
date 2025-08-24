@@ -7,9 +7,7 @@
     lutris
     steam-run
 
-    noto-fonts
-    noto-fonts-cjk
-    wqy_zenhei
+    # wqy_zenhei
   ];
 
   home.sessionVariables = {
