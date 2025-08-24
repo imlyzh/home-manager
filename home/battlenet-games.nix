@@ -6,8 +6,7 @@
 
     lutris
     steam-run
-
-    # wqy_zenhei
+    wqy_zenhei
   ];
 
   home.sessionVariables = {
