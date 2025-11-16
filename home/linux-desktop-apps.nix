@@ -39,6 +39,7 @@
     # teamspeak_client
     # teamspeak_server
     # zoom-us
+    motrix
     qbittorrent-enhanced
     localsend
     # steam

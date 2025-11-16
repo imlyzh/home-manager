@@ -22,6 +22,7 @@
     tmux
     coreutils
 
+    aria2
     mihomo
     proxychains-ng
   ];
