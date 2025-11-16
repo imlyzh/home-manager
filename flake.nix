@@ -39,14 +39,6 @@
             # nixpkgs.overlays = [ rust-overlay.overlays.default ];
           # })
         ];
-    darwin-modules = [
-          ./home/darwin-home.nix
-          ./home/shell.nix
-          ./home/dev.nix
-          # ({ pkgs, ... }: {
-            # nixpkgs.overlays = [ rust-overlay.overlays.default ];
-          # })
-        ];
 
     homeConfigurations = {
       "linux" = home-manager.lib.homeManagerConfiguration {
@@ -76,20 +68,6 @@
           inherit dotfiles;
           };
         modules = linux-desktop-modules;
-      };
-      "darwin" = home-manager.lib.homeManagerConfiguration {
-        pkgs = import nixpkgs {
-          system = "aarch64-darwin";
-          # config.allowUnfree = true;
-          # overlays = [
-            # rust-overlay.overlays.default
-          # ];
-          };
-        extraSpecialArgs = {
-          inherit inputs;
-          inherit dotfiles;
-          };
-        modules = darwin-modules;
       };
     };
   };
