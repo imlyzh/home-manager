@@ -13,37 +13,37 @@
     #fcitx5
     ibus
 
-    firefox
-    spotify
-    kotatogram-desktop
-    transmission_4-gtk
-
     clash-verge-rev
-    # vscode
+    vscode
     file-roller
 
-    #podman-desktop
-
     firefox
+    firefox-devedition
     spotify
     telegram-desktop
-    transmission_4-gtk
     mumble
+    syncplay
+
+    localsend
+    motrix
+    qbittorrent-enhanced
+    transmission_4-gtk
+
+    anki
+
+    # podman-desktop
 
     # discord
     # obsidian
     # logseq
-    syncplay
-    #teamspeak3
+
+    # teamspeak3
     # teamspeak_client
     # teamspeak_server
     # zoom-us
-    motrix
-    qbittorrent-enhanced
-    localsend
+
     # steam
 
-    anki
   ];
 
   programs.kitty = {
