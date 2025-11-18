@@ -14,7 +14,6 @@
     ibus
 
     firefox
-    discord
     spotify
     kotatogram-desktop
     transmission_4-gtk
