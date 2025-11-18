@@ -26,7 +26,7 @@
     setting.user = {
       name = "imlyzh";
       email = "enterindex@gmail.com";
-    }
+    };
   };
 
   programs.direnv = {
