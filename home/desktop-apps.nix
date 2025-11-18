@@ -34,7 +34,7 @@
     # obsidian
     # logseq
     syncplay
-    teamspeak3
+    #teamspeak3
     # teamspeak_client
     # teamspeak_server
     # zoom-us
