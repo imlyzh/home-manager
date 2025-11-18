@@ -26,14 +26,14 @@
     #podman-desktop
 
     firefox
-    discord
     spotify
     telegram-desktop
     transmission_4-gtk
     mumble
 
-    obsidian
-    logseq
+    # discord
+    # obsidian
+    # logseq
     syncplay
     teamspeak3
     # teamspeak_client
