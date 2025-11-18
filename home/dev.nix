@@ -23,10 +23,8 @@
 
   programs.git = {
     enable = true;
-    setting.user = {
-      name = "imlyzh";
-      email = "enterindex@gmail.com";
-    };
+    userName = "imlyzh";
+    userEmail = "enterindex@gmail.com";
   };
 
   programs.direnv = {
