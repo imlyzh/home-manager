@@ -6,9 +6,6 @@
 
     kitty
     ghostty
-
-    vscode
-
     fuzzel
 
     #fcitx5
@@ -17,14 +14,16 @@
     file-roller
 
     clash-verge-rev
-    vscode
 
-    firefox
+    ungoogled-chromium
+    # firefox
     vlc
 
     motrix
 
     anki
+
+    vscode
 
     # podman-desktop
 
