@@ -23,6 +23,8 @@
     telegram-desktop
     mumble
     syncplay
+    vlc
+    mpv
 
     localsend
     motrix
