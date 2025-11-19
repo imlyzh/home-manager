@@ -7,6 +7,8 @@
     kitty
     ghostty
 
+    vscode
+
     fuzzel
 
     #fcitx5
