@@ -22,6 +22,7 @@
     linux-modules = [
           ./home/home.nix
           ./home/shell.nix
+          ./home/shell-linux.nix
           ./home/dev.nix
           ./home/docker.nix
           # ({ pkgs, ... }: {
@@ -31,6 +32,7 @@
     linux-desktop-modules = [
           ./home/home.nix
           ./home/shell.nix
+          ./home/shell-linux.nix
           ./home/dev.nix
           ./home/docker.nix
           ./home/desktop-apps.nix
