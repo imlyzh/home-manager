@@ -27,7 +27,6 @@
     dtach
     zellij
     gping
-    netavark
     rustscan
     bandwhich
     # uutils-coreutils
