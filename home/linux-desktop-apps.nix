@@ -4,6 +4,9 @@
   home.packages = with pkgs; [
     font-awesome # 好看的图标字体，waybar会用到
 
+    firefox-devedition
+    telegram-desktop
+
     kitty
     ghostty
     fuzzel
