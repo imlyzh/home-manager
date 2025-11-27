@@ -9,7 +9,6 @@
     ouch
     eza
     qsv
-    loc
     dua
     fd
     sd
@@ -18,6 +17,7 @@
     skim
     dust
     just
+    tokei
     gitui
     delta
     difftastic
