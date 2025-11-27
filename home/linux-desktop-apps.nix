@@ -4,7 +4,8 @@
   home.packages = with pkgs; [
     font-awesome # 好看的图标字体，waybar会用到
 
-    tailscale-ui
+    tailscale-gtk
+    # tailscale-systray
 
     firefox-devedition
     telegram-desktop
