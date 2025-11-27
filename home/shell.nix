@@ -1,12 +1,15 @@
 { config, pkgs, ... }: {
   home.packages = with pkgs; [
     tlrc
-    netavark
     nushell
     ripgrep
     broot
     procs
     bottom
+    ouch
+    eza
+    qsv
+    loc
     dua
     fd
     sd
@@ -14,11 +17,19 @@
     jaq
     skim
     dust
+    just
+    gitui
     delta
     difftastic
+    choose
+    zoxide
+    starship
     dtach
     zellij
+    gping
+    netavark
     rustscan
+    bandwhich
     # uutils-coreutils
 
     rsync
