@@ -19,7 +19,6 @@
     dtach
     zellij
     rustscan
-    firejail-rs
     # uutils-coreutils
 
     rsync
