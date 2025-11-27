@@ -12,12 +12,12 @@
 
   home.packages = with pkgs; [
     tailscale
-    #v2raya
     zsh
 
     clang
     #zig
 
+    #v2raya
     #clash-rs
     #clashtui
 

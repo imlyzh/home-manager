@@ -1,5 +1,27 @@
 { config, pkgs, ... }: {
   home.packages = with pkgs; [
+    tlrc
+    netavark
+    nushell
+    ripgrep
+    broot
+    procs
+    bottom
+    dua
+    fd
+    sd
+    bat
+    jaq
+    skim
+    dust
+    delta
+    difftastic
+    dtach
+    zellij
+    rustscan
+    firejail-rs
+    # uutils-coreutils
+
     rsync
     zsh
     fish
@@ -7,19 +29,15 @@
     curl
     htop
     btop
-    tlrc
     tree
     git
     emacs
-    nushell
-    ripgrep
-    fd
     jq
     fzf
-    bat
     neofetch
-    dust
     tmux
+    screen
+    mosh
     coreutils
 
     aria2
