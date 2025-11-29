@@ -12,8 +12,10 @@
     dua
     fd
     sd
+    xh
     bat
     jaq
+    gdu
     skim
     dust
     just
@@ -24,12 +26,14 @@
     choose
     zoxide
     starship
+    helix
     dtach
     zellij
     gping
     rustscan
     bandwhich
     # uutils-coreutils
+    # uutils-coreutils-noprefix
 
     rsync
     zsh
