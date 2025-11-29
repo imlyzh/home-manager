@@ -20,7 +20,6 @@
     dust
     just
     tokei
-    gitui
     delta
     difftastic
     choose
