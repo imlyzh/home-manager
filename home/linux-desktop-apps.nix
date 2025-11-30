@@ -55,7 +55,7 @@
     enable = true;
   };
 
-  programs.firefox.enable = true;
+  # programs.firefox.enable = true;
 
   # xdg.configFile = {
   #   "./.config/assets".text = import ../dotfiles/.config/assets;

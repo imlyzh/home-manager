@@ -1,4 +1,3 @@
-# 你可以把这个文件保存为 desktop.nix，然后在你的主 home.nix 中导入它
 { config, pkgs, ... }:
 {
   home.packages = with pkgs; [
