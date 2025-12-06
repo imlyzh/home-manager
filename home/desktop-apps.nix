@@ -5,7 +5,7 @@
 
     # firefox-devedition
     # telegram-desktop
-    mumble
+    # mumble
     syncplay
     mpv
 

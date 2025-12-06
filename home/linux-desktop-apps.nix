@@ -8,6 +8,7 @@
 
     firefox
     # firefox-devedition
+    ungoogled-chromium
     telegram-desktop
 
     kitty
@@ -21,8 +22,7 @@
 
     clash-verge-rev
 
-    ungoogled-chromium
-    # firefox
+    mumble
     vlc
 
     motrix
