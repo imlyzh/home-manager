@@ -6,7 +6,8 @@
 
     tailscale-systray
 
-    firefox-devedition
+    firefox
+    # firefox-devedition
     telegram-desktop
 
     kitty
