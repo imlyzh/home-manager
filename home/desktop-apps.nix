@@ -3,9 +3,7 @@
   home.packages = with pkgs; [
     noto-fonts-cjk-sans # 中日韩字体，防止乱码
 
-    # firefox-devedition
-    # telegram-desktop
-    # mumble
+    mumble
     syncplay
     mpv
 
