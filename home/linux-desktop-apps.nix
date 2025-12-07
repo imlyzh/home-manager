@@ -22,8 +22,15 @@
 
     clash-verge-rev
 
+    localsend
+
+    syncplay
     mumble
+    mpv
     vlc
+
+    qbittorrent-enhanced
+    transmission_4-gtk
 
     motrix
 
