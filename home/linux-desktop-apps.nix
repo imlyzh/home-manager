@@ -2,6 +2,7 @@
 { config, pkgs, ... }:
 {
   home.packages = with pkgs; [
+    noto-fonts-cjk-sans
     font-awesome # 好看的图标字体，waybar会用到
 
     tailscale-systray

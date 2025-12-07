@@ -35,7 +35,6 @@
           ./home/shell-linux.nix
           ./home/dev.nix
           ./home/docker.nix
-          ./home/desktop-apps.nix
           ./home/linux-desktop-apps.nix
           ./home/battlenet-games.nix
           # ({ pkgs, ... }: {
