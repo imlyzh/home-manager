@@ -29,6 +29,8 @@
     "$HOME/.cargo/bin"
   ];
 
+  xdg.configFile."ghostty/config.toml".source = "${dotfiles}/.config/ghostty/config.toml";
+  xdg.configFile."helix/config.toml".source = "${dotfiles}/.config/helix/config.toml";
   xdg.configFile."nvim" = {
     source = pkgs.fetchFromGitHub {
       owner = "imlyzh";
