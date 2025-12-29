@@ -69,12 +69,29 @@
         "type": "github"
       }
     },
+    "rime-without-ice": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1767042017,
+        "narHash": "sha256-nqTPMgNMQwxVbuU5oe3G735z4BOiQiPu8NAJhwfpAOI=",
+        "owner": "imlyzh",
+        "repo": "rime-without-ice",
+        "rev": "e0c36fe6042795f22b5bd2e1c75380d0b34c3671",
+        "type": "github"
+      },
+      "original": {
+        "owner": "imlyzh",
+        "repo": "rime-without-ice",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "dotfiles": "dotfiles",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
-        "rime-ice": "rime-ice"
+        "rime-ice": "rime-ice",
+        "rime-without-ice": "rime-without-ice"
       }
     }
   },

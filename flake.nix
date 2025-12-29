@@ -18,6 +18,11 @@
       flake = false;
     };
 
+    rime-without-ice = {
+      url = "github:imlyzh/rime-without-ice";
+      flake = false;
+    };
+
     dotfiles = {
       url = "github:imlyzh/dotfiles";
       flake = false;

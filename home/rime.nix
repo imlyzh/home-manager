@@ -8,7 +8,7 @@ let
     name = "rime-merged";
     paths = [
       inputs.rime-ice
-      ./rime
+      inputs.rime-without-ice
     ];
     pathsToLink = [ "/" ];
 
