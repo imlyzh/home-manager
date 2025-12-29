@@ -12,6 +12,11 @@
       # inputs.nixpkgs.follows = "nixpkgs";
     # };
 
+    rime-ice = {
+      url = "github:iDvel/rime-ice";
+      flake = false;
+    };
+
     dotfiles = {
       url = "github:imlyzh/dotfiles";
       flake = false;
@@ -21,6 +26,7 @@
   outputs = { nixpkgs, home-manager, dotfiles, ... } @ inputs: rec {
     linux-modules = [
           ./home/home.nix
+          ./home/rime.nix
           ./home/shell.nix
           ./home/shell-linux.nix
           ./home/dev.nix
@@ -31,6 +37,7 @@
         ];
     linux-desktop-modules = [
           ./home/home.nix
+          ./home/rime.nix
           ./home/shell.nix
           ./home/shell-linux.nix
           ./home/dev.nix

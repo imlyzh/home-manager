@@ -3,11 +3,11 @@
     "dotfiles": {
       "flake": false,
       "locked": {
-        "lastModified": 1767012006,
-        "narHash": "sha256-YGJtN+ugkAjHGAHSEGlamfB0E1QfnX7qomBbk9RvSxY=",
+        "lastModified": 1767013361,
+        "narHash": "sha256-aX83QGcDuAfAmPZAmWsLh21zCBpC2D+/qO48fVGsEkc=",
         "owner": "imlyzh",
         "repo": "dotfiles",
-        "rev": "946247ba84cc6674d7ec26f96fe61e50035502d8",
+        "rev": "7796121d07d42e253c6a08ea3a0b5d769a64a4f2",
         "type": "github"
       },
       "original": {
@@ -53,11 +53,28 @@
         "type": "github"
       }
     },
+    "rime-ice": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1766566529,
+        "narHash": "sha256-rEWf96uoYZm/n8IBSSG5qnXBgiWvrzhD1+GutLqMlg8=",
+        "owner": "iDvel",
+        "repo": "rime-ice",
+        "rev": "cc51682a850e9b89db8856c589b8c13f8b534a7c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "iDvel",
+        "repo": "rime-ice",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "dotfiles": "dotfiles",
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "rime-ice": "rime-ice"
       }
     }
   },
