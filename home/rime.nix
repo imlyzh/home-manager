@@ -12,6 +12,6 @@ in
 
   home.file."${rimeDir}/default.custom.yaml".source = "${dotfiles}/rime/default.custom.yaml";
   home.file."${rimeDir}/squirrel.custom.yaml".source = "${dotfiles}/rime/squirrel.custom.yaml";
-  home.file."${rimeDir}/flypy_ice.schema.yaml".source = "${dotfiles}/rime/flypy_ice.schema.yaml";
-  home.file."${rimeDir}/double_pinyin_zrm_xing.schema.yaml".source = "${dotfiles}/rime/double_pinyin_zrm_xing.schema.yaml";
+  home.file."${rimeDir}/double_pinyin.custom.yaml".source = "${dotfiles}/rime/double_pinyin.custom.yaml";
+  home.file."${rimeDir}/double_pinyin_flypy.custom.yaml".source = "${dotfiles}/rime/double_pinyin_flypy.custom.yaml";
 }
