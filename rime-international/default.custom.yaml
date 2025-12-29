@@ -1,0 +1,13 @@
+patch:
+  schema_list:
+    - schema: double_pinyin
+    - schema: double_pinyin_flypy
+    - schema: latin_international
+    - schema: kyril_international
+    - schema: greek
+    - schema: arabic
+
+  menu/page_size: 9
+
+  # "switches/@0/reset": 0             # ASCII 模式 (0表示中文)
+  "switches/@1/reset": 1 # 简繁转换 (在 rime-ice 中 1 通常对应简体)

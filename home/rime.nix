@@ -8,20 +8,11 @@ let
     name = "rime-merged";
     paths = [
       inputs.rime-ice
-      inputs.rime-latin-international
-      inputs.rime-kyril-international
-      inputs.rime-greek
-      inputs.rime-arabic
-      inputs.rime-esperanto
-      "${dotfiles}/rime"
+      ./rime
     ];
     pathsToLink = [ "/" ];
 
     ignoreCollisions = false;
-    # postBuild = ''
-    #   # 添加自定义配置文件
-    #   cp ${./custom/default.custom.yaml} $out/default.custom.yaml
-    # '';
   };
 in
 {

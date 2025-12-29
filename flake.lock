@@ -39,65 +39,17 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1766870016,
-        "narHash": "sha256-fHmxAesa6XNqnIkcS6+nIHuEmgd/iZSP/VXxweiEuQw=",
+        "lastModified": 1766996594,
+        "narHash": "sha256-SosfgQSqVmOkqVgNYJnxW5FvoIQX4grOcpIKNrIwz4o=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "5c2bc52fb9f8c264ed6c93bd20afa2ff5e763dce",
+        "rev": "0744ef1b047f07d31d9962d757ffe38ec14a4d41",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
         "ref": "nixpkgs-unstable",
         "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "rime-arabic": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1726933022,
-        "narHash": "sha256-bAJafyK48IR98Z4sGZwp/i7xirrKdF3621cCq8rrwOw=",
-        "owner": "biopolyhedron",
-        "repo": "rime-arabic",
-        "rev": "9a215cb6b0ce90a21ee0fe49077e1bf01d290b9f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "biopolyhedron",
-        "repo": "rime-arabic",
-        "type": "github"
-      }
-    },
-    "rime-esperanto": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1649766835,
-        "narHash": "sha256-kS1cJcFwvoCJ1PrNATJOYynA0SHkuWM+s2JlegmgkGk=",
-        "owner": "arsenali",
-        "repo": "rime-esperanto",
-        "rev": "51cf1c0baa059d67d155c029682f9d0a6db1a3dd",
-        "type": "github"
-      },
-      "original": {
-        "owner": "arsenali",
-        "repo": "rime-esperanto",
-        "type": "github"
-      }
-    },
-    "rime-greek": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1480265695,
-        "narHash": "sha256-bWVBEs0IGepH5PQQyqrsQoFzAeB7X2p7+IGsrqrIiFw=",
-        "owner": "biopolyhedron",
-        "repo": "rime-greek",
-        "rev": "8a1017579ca7e3bce2d2fc51d910c09d82395d94",
-        "type": "github"
-      },
-      "original": {
-        "owner": "biopolyhedron",
-        "repo": "rime-greek",
         "type": "github"
       }
     },
@@ -117,49 +69,12 @@
         "type": "github"
       }
     },
-    "rime-kyril-international": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1589041846,
-        "narHash": "sha256-igf/chS1ehaZRlFaYh4cLOHymbZaDFRFAUwJ9UWctiI=",
-        "owner": "biopolyhedron",
-        "repo": "rime-kyril-international",
-        "rev": "2360753f6dd1d7088a8a3fbf6540680c9a650df0",
-        "type": "github"
-      },
-      "original": {
-        "owner": "biopolyhedron",
-        "repo": "rime-kyril-international",
-        "type": "github"
-      }
-    },
-    "rime-latin-international": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1737010539,
-        "narHash": "sha256-Yp6JIa7cch+TnLU9qTDni+u/c66h9wdrQBYqVcnwguo=",
-        "owner": "biopolyhedron",
-        "repo": "rime-latin-international",
-        "rev": "25fb19023c0a71187f56461672ee2fc4aa83773f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "biopolyhedron",
-        "repo": "rime-latin-international",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "dotfiles": "dotfiles",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
-        "rime-arabic": "rime-arabic",
-        "rime-esperanto": "rime-esperanto",
-        "rime-greek": "rime-greek",
-        "rime-ice": "rime-ice",
-        "rime-kyril-international": "rime-kyril-international",
-        "rime-latin-international": "rime-latin-international"
+        "rime-ice": "rime-ice"
       }
     }
   },

@@ -1,0 +1,22 @@
+patch:
+  style/candidate_list_layout: stacked
+  # style/candidate_format: "[label]. [candidate] [comment]"
+  style/text_orientation: horizontal
+  style/inline_preedit: true
+  style/inline_candidate: true
+  style/translucency: true
+  style/memorize_size: true
+  style/mutual_exclusive: false
+  style/showPaging: false
+
+  style/color_scheme: purity_of_essence
+  # style/color_scheme: "macOS_light"
+  # style/color_scheme_dark: "macOS_dark"
+
+  style/font_face: Avenir-Book
+  # style/font_face: "LXGW WenKai"
+  style/font_point: 18
+  style/corner_radius: 8
+  style/border_width: 0
+  style/line_spacing: 5
+  style/spacing: 8

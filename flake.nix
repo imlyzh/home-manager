@@ -18,31 +18,6 @@
       flake = false;
     };
 
-    rime-latin-international = {
-      url = "github:biopolyhedron/rime-latin-international";
-      flake = false;
-    };
-
-    rime-kyril-international = {
-      url = "github:biopolyhedron/rime-kyril-international";
-      flake = false;
-    };
-
-    rime-greek = {
-      url = "github:biopolyhedron/rime-greek";
-      flake = false;
-    };
-
-    rime-arabic = {
-      url = "github:biopolyhedron/rime-arabic";
-      flake = false;
-    };
-
-    rime-esperanto = {
-      url = "github:arsenali/rime-esperanto";
-      flake = false;
-    };
-
     dotfiles = {
       url = "github:imlyzh/dotfiles";
       flake = false;
