@@ -1,4 +1,5 @@
 { config, pkgs, lib, dotfiles, ... }:
+let rimeDir = "${config.xdg.dataHome}/fcitx5/rime"; in
 {
   home = {
     username = "lyzh";
@@ -29,7 +30,13 @@
   };
 
   programs.home-manager.enable = true;
-    # backupFileExtension = "backup";
+  # backupFileExtension = "backup";
+
+  home.file."${rimeDir}" = {
+    source = inputs.rime-ice;
+    recursive = true;
+  };
+  home.file."${rimeDir}/default.custom.yaml".source = "${dotfiles}/rime/default.custom.yaml";
 
   xdg.configFile."ghostty/config.toml".source = "${dotfiles}/.config/ghostty/config.toml";
   xdg.configFile."helix/config.toml".source = "${dotfiles}/.config/helix/config.toml";
