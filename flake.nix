@@ -7,6 +7,7 @@
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     # rust-overlay = {
       # url = "github:oxalica/rust-overlay";
       # inputs.nixpkgs.follows = "nixpkgs";
@@ -14,6 +15,31 @@
 
     rime-ice = {
       url = "github:iDvel/rime-ice";
+      flake = false;
+    };
+
+    rime-latin-international = {
+      url = "github:biopolyhedron/rime-latin-international";
+      flake = false;
+    };
+
+    rime-kyril-international = {
+      url = "github:biopolyhedron/rime-kyril-international";
+      flake = false;
+    };
+
+    rime-greek = {
+      url = "github:biopolyhedron/rime-greek";
+      flake = false;
+    };
+
+    rime-arabic = {
+      url = "github:biopolyhedron/rime-arabic";
+      flake = false;
+    };
+
+    rime-esperanto = {
+      url = "github:arsenali/rime-esperanto";
       flake = false;
     };
 

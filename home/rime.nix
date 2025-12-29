@@ -3,15 +3,33 @@ let
   rimeDir = if pkgs.stdenv.isDarwin
             then "Library/Rime"
             else "${config.xdg.dataHome}/fcitx5/rime";
+
+  mergeRimeConfigs = pkgs.buildEnv {
+    name = "rime-merged";
+    paths = [
+      inputs.rime-ice
+      inputs.rime-latin-international
+      inputs.rime-kyril-international
+      inputs.rime-greek
+      inputs.rime-arabic
+      inputs.rime-esperanto
+      "${dotfiles}/rime"
+    ];
+    pathsToLink = [ "/" ];
+
+    ignoreCollisions = false;
+    # postBuild = ''
+    #   # 添加自定义配置文件
+    #   cp ${./custom/default.custom.yaml} $out/default.custom.yaml
+    # '';
+  };
 in
 {
   home.file."${rimeDir}" = {
-    source = inputs.rime-ice;
+    source = mergeRimeConfigs;
     recursive = true;
   };
 
-  home.file."${rimeDir}/default.custom.yaml".source = "${dotfiles}/rime/default.custom.yaml";
-  home.file."${rimeDir}/squirrel.custom.yaml".source = "${dotfiles}/rime/squirrel.custom.yaml";
-  # home.file."${rimeDir}/double_pinyin.custom.yaml".source = "${dotfiles}/rime/double_pinyin.custom.yaml";
-  # home.file."${rimeDir}/double_pinyin_flypy.custom.yaml".source = "${dotfiles}/rime/double_pinyin_flypy.custom.yaml";
+  # home.file."${rimeDir}/default.custom.yaml".source = "${dotfiles}/rime/default.custom.yaml";
+  # home.file."${rimeDir}/squirrel.custom.yaml".source = "${dotfiles}/rime/squirrel.custom.yaml";
 }
