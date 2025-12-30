@@ -1,56 +1,61 @@
-# 你可以把这个文件保存为 desktop.nix，然后在你的主 home.nix 中导入它
 { config, pkgs, ... }:
 {
   home.packages = with pkgs; [
+    # Fonts
     noto-fonts-cjk-sans
     font-awesome # 好看的图标字体，waybar会用到
 
+    # Network & Tools
     tailscale-systray
+    clash-verge-rev
+    localsend
 
+    # Browsers
     firefox
     # firefox-devedition
     ungoogled-chromium
+
+    # Communication
     telegram-desktop
-
-    kitty
-    ghostty
-    fuzzel
-
-    #fcitx5
-    ibus
-
-    file-roller
-
-    clash-verge-rev
-
-    localsend
-
-    syncplay
     mumble
-    mpv
-    vlc
-
-    qbittorrent-enhanced
-    transmission_4-gtk
-
-    motrix
-
-    anki
-
-    vscode
-
-    # podman-desktop
-
     # discord
-    # obsidian
-    # logseq
-
     # teamspeak3
     # teamspeak_client
     # teamspeak_server
     # zoom-us
 
-    # steam
+    # Terminal
+    kitty
+    ghostty
+
+    # Launchers
+    # fuzzel
+
+    # Input Method
+    # fcitx5
+    ibus
+
+    # File Manager
+    file-roller
+
+    # Media Players
+    syncplay
+    mpv
+    vlc
+
+    # Download Tools
+    qbittorrent-enhanced
+    transmission_4-gtk
+    motrix
+
+    # Productivity & Study
+    anki
+    vscode
+    # obsidian
+    # logseq
+
+    # Development & Virtualization
+    podman-desktop
   ];
 
   programs.kitty = {
@@ -60,11 +65,10 @@
       size = 12;
     };
   };
+
   programs.ghostty = {
     enable = true;
   };
-
-  # programs.firefox.enable = true;
 
   # xdg.configFile = {
   #   "./.config/assets".text = import ../dotfiles/.config/assets;

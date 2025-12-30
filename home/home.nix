@@ -1,4 +1,4 @@
-{ config, pkgs, lib, dotfiles, ... }:
+{ config, pkgs, lib, ... }:
 {
   home = {
     username = "lyzh";
@@ -12,21 +12,14 @@
 
   home.packages = with pkgs; [
     tailscale
-    zsh
 
-    clang
-    #zig
-
-    #v2raya
-    #clash-rs
-    #clashtui
+    netavark
 
     anki-sync-server
-  ];
 
-  programs.direnv = {
-    enable = true;
-  };
+    podman
+    podman-tui
+  ];
 
   programs.home-manager.enable = true;
   # backupFileExtension = "backup";
