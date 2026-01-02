@@ -32,8 +32,8 @@
     # fuzzel
 
     # Input Method
-    fcitx5-rime
-    ibus-engines.rime
+    # fcitx5-rime
+    # ibus-engines.rime
     # rime-ice
 
     # File Manager
