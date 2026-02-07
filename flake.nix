@@ -32,22 +32,15 @@
   outputs = { nixpkgs, home-manager, dotfiles, ... } @ inputs: rec {
     linux-modules = [
           ./home/home.nix
-          ./home/rime.nix
-          ./home/shell.nix
-          ./home/shell-linux.nix
-          ./home/dev.nix
-          ./home/docker.nix
+          ./home/common.nix
+          ./home/linux-desktop-apps.nix
           # ({ pkgs, ... }: {
             # nixpkgs.overlays = [ rust-overlay.overlays.default ];
           # })
         ];
     linux-desktop-modules = [
           ./home/home.nix
-          ./home/rime.nix
-          ./home/shell.nix
-          ./home/shell-linux.nix
-          ./home/dev.nix
-          ./home/docker.nix
+          ./home/common.nix
           ./home/linux-desktop-apps.nix
           ./home/battlenet-games.nix
           # ({ pkgs, ... }: {
