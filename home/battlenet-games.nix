@@ -1,8 +1,8 @@
 { config, pkgs, ... }:
 {
   home.packages = with pkgs; [
-    wineWowPackages.full
-    winetricks
+    # wineWowPackages.full
+    # winetricks
 
     lutris
     steam-run

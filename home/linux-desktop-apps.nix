@@ -57,6 +57,10 @@
 
     # Development & Virtualization
     podman-desktop
+
+    krita
+    blender
+    inkscape
   ];
 
   programs.kitty = {
