@@ -133,11 +133,15 @@ in {
   home.sessionPath = [
     "$HOME/.cargo/bin"
   ];
-
   home.file."${rimeDir}" = {
     source = mergeRimeConfigs;
     recursive = true;
   };
+  home.file.".config/ibus/rime" = {
+    source = mergeRimeConfigs;
+    recursive = true;
+  };
+
 
   xdg.configFile."ghostty/config.toml".source = "${dotfiles}/.config/ghostty/config.toml";
   xdg.configFile."helix/config.toml".source = "${dotfiles}/.config/helix/config.toml";
