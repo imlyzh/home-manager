@@ -65,7 +65,6 @@ in {
     htop         # 传统监控
     btop         # 现代监控 (C++)
     bottom       # 现代监控 (Rust)
-    neofetch     # 系统信息展示
     tokei        # 代码行数统计
 
     # --- Network & Download (网络工具与下载) ---
@@ -78,6 +77,7 @@ in {
     gping        # 图形化 ping
     rustscan     # 端口扫描
     bandwhich    # 流量监控
+    yt-dlp
 
     # --- Data Processing (数据处理) ---
     jq           # JSON 处理 (C)
