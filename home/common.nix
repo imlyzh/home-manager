@@ -87,7 +87,7 @@ in {
     # --- Development & Languages (开发工具与语言) ---
     git
     just         # 任务运行器 (类似 make)
-    rustup       # Rust 工具链
+    # rustup       # Rust 工具链
     clang        # C 编译器
     openjdk      # Java 运行环境
     #zig         # Zig 编译器
